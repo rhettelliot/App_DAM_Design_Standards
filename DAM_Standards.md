@@ -59,9 +59,9 @@ Before writing a single line of CSS, establish the core emotional and visual pri
 
 - **Invisible Sophistication** — The UI should never compete with the assets. If a photographer drops a neon-heavy fashion editorial into the DAM, the interface around it should *frame* it, not clash with it. This is the single most consistent pattern across Lightroom, Capture One, and every premium DAM: the UI recedes.
 
-- **Tactile Precision** — Every transition, hover state, and interaction must feel heavy and intentional. Think of the dampened mechanical click of a Leica camera or the smooth dial of a high-end audio mixer. Capture One's tool panels exemplify this — they slide with eased motion, never snap.
+- **Mechanical Precision** — Every transition, hover state, and interaction must feel heavy and intentional. Think of the dampened mechanical click of a Leica camera or the precision of professional studio hardware. Adobe Bridge and Apple Aperture exemplify this — they use sharp corners (`2px`-`4px`), pure flat charcoals, and strictly utilitarian layouts. Soft, blooming shadows and pill-shaped buttons are rejected in favor of rigid structure.
 
-- **Spacious Minimalism** — Luxury brands use whitespace to signal premium quality. Give elements room to breathe, avoiding the cramped, spreadsheet-like feel of legacy enterprise software. Filecamp and Widen demonstrate that even cloud DAMs can feel editorial.
+- **High-Density Utility** — Pro desktop software maximizes data density. Padding is tight, typography is compact, and tools are packed efficiently. The UI is designed for power users who need to see as many assets and metadata points as possible.
 
 - **Dual Personality** — Support both dark and light modes. Pro editing demands dark (Lightroom, Capture One); team collaboration benefits from light (Filecamp, MediaValet). Build both from the same token system.
 
@@ -69,34 +69,32 @@ Before writing a single line of CSS, establish the core emotional and visual pri
 
 ### 2. The Color System: Monetizing Monochromes
 
-A high-end media tool requires an **asset-first** color strategy. Your primary palette must be neutral to prevent color cast interference when editors are color-correcting or selecting media.
+A high-end media tool requires an **asset-first** color strategy. Your primary palette must be pure neutral charcoal/black to prevent color cast interference when editors are color-correcting or selecting media.
 
 #### Core Palette
 
 | Token Name | Hex Value | Use Case | Derived From |
 |---|---|---|---|
-| `--surface-primary` | `#1a1a1a` | Dark mode backgrounds | Lightroom / Capture One |
-| `--surface-secondary` | `#252525` | Dark mode panels, cards | ACDSee / DxO |
-| `--surface-tertiary` | `#2f2f2f` | Dark mode hover / elevated surfaces | Bridge |
+| `--surface-primary` | `#1e1e1e` | Dark mode backgrounds | Lightroom / Adobe Bridge |
+| `--surface-secondary` | `#262626` | Dark mode panels, cards | Aperture / Capture One |
+| `--surface-tertiary` | `#333333` | Dark mode hover / elevated surfaces | Bridge |
 | `--surface-light` | `#fafafa` | Light mode backgrounds | Filecamp / WebDAM |
 | `--surface-light-alt` | `#f0f0f0` | Light mode cards, alternating rows | MediaValet |
-| `--border-subtle` | `#3a3a3a` | Dark mode dividers | Universal |
+| `--border-subtle` | `#151515` | Dark mode dividers | Universal |
 | `--border-subtle-light` | `#e0e0e0` | Light mode dividers | Filecamp / Widen |
 | `--text-primary` | `#f0f0f0` | Dark mode primary text | Universal |
-| `--text-secondary` | `#8a8a8a` | Metadata labels, secondary info | Lightroom / DxO |
+| `--text-secondary` | `#a0a0a0` | Metadata labels, secondary info | Lightroom / DxO |
 | `--text-primary-light` | `#1a1a1a` | Light mode primary text | Filecamp |
 
 #### Accent System
 
-Every DAM analyzed uses a **single accent color** for primary actions. Choose one:
+Every DAM analyzed uses a **single accent color** for primary actions. 
 
 | Accent Strategy | Example | Used By |
 |---|---|---|
 | **Studio Blue** | `#00a1e0` | Adobe (Bridge, Lightroom) |
-| **Signal Orange** | `#e8912d` | Capture One |
-| **Confidence Teal** | `#009688` | Widen, DxO |
-| **Creative Violet** | `#7c4dff` | Luminar / Skylum |
-| **Action Green** | `#4caf50` | Filecamp |
+
+**Currently Selected:** **Studio Blue (`#00a1e0`)**
 
 #### The 95/5 Rule
 
@@ -107,9 +105,9 @@ Every DAM analyzed uses a **single accent color** for primary actions. Choose on
 | Purpose | Hex | Usage |
 |---|---|---|
 | Success / Approved | `#4caf50` | Upload complete, asset approved |
-| Warning / Pending | `#ff9800` | Expiring assets, review needed |
+| Warning / Pending | `#e8912d` | Expiring assets, review needed |
 | Error / Rejected | `#f44336` | Failed upload, rejected asset |
-| Info / Processing | `#2196f3` | Syncing, indexing, processing |
+| Info / Processing | `#00a1e0` | Syncing, indexing, processing |
 
 ---
 
